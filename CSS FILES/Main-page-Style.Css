@@ -1,0 +1,213 @@
+/* Reset Settings */
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     user-select: none;
+     -webkit-user-drag: none;
+     -o-user-drag: none;
+     -moz-user-drag: none;
+     -ms-user-drag: none;
+     font-family: calibri ,  tahoma;
+}
+
+/* Global Settings  */
+
+:root {
+     --BG-color--: #1c1c1c;
+     --golden-color--: #ffe002;
+     --golden-color-2--: #ffb606;
+     --golden-color-3--: #b28228;
+     --color-dark--: #0c0c0c;
+}
+
+a {
+     color: var(--golden-color--);
+     text-decoration: none;
+}
+
+
+
+/* Scroll Bar  */
+
+html {
+     scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+     width: 2vmin;
+     background: -webkit-linear-gradient(top, var(--golden-color-3--), var(--golden-color-2--), var(--golden-color-3--));
+}
+
+::-webkit-scrollbar-thumb {
+     background: -webkit-linear-gradient(top, var(--color-dark--), var(--BG-color--), var(--color-dark--));
+     border-radius: 100000vw;
+}
+
+/* Body Settings  */
+
+body {
+     background: var(--BG-color--);
+     position: relative;
+     box-shadow: inset 0 0 10vmin black;
+     -o-box-shadow: inset 0 0 10vmin black;
+     -ms-box-shadow: inset 0 0 10vmin black;
+     -moz-box-shadow: inset 0 0 10vmin black;
+     -webkit-box-shadow: inset 0 0 10vmin black;
+}
+
+/* Header Style  */
+
+header {
+     background-color: var(--BG-color--);
+     padding: 20px;
+     width: 100%;
+     border-bottom: 2px solid var(--golden-color--);
+     box-shadow: 0 0 10px var(--golden-color--);
+
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: fixed;
+     z-index: 2;
+}
+
+.AH-title {
+     color: var(--golden-color--);
+     font: 600 2vw tahoma;
+     background: -webkit-linear-gradient(#dbbd10, rgb(49, 46, 32));
+     text-shadow: 0 0 5px #dbbd1049;
+     -webkit-background-clip: text;
+     background-clip: text;
+     -o-background-clip: text;
+     -ms-background-clip: text;
+     -moz-background-clip: text;
+
+     -o-text-fill-color: transparent;
+     -moz-text-fill-color: transparent;
+     -ms-text-fill-color: transparent;
+     -webkit-text-fill-color: transparent;
+}
+
+header section {
+     margin-left: 10%;
+     
+}
+
+header section div {
+     font: bold 1.3vw calibri , tahoma;
+}
+
+header section div p {
+     display: inline-block;
+}
+
+/* Main Style  */
+
+main {
+     display: flex;
+     flex-flow: wrap;
+     justify-content: center;
+}
+
+/* Video List Style  */
+
+main section {
+     width: 55%;
+     border: 0.1vmin solid var(--golden-color--);
+     box-shadow: 1vmin 1vmin 3vmin #6b5c0446;
+     border-radius: 1vmin;
+     position: relative;
+     margin-top: 18vmin;
+}
+main section a {
+     display: block;
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
+}
+
+main section a h3,
+main section a h2 {
+     font-size: 1.4vw;
+}
+main img {
+     width: 100%;
+     border-radius: 1vmin 1vmin 0 0;
+}
+
+/* Caption Video Lists Style  */
+
+main section .header-caption {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+main section .header-caption i {
+     font-size: 2.9vw;
+     cursor: pointer;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+main section .caption-video {
+     border-radius: 0 0 1vmin 1vmin;
+     border-top: 0.1vmin solid var(--golden-color-3--);
+     background-color: var(--color-dark--);
+     color: var(--golden-color-2--);
+     padding: 3vmin;
+}
+
+main .edit-information {
+     font: 400 1.4vw calibri, tahoma;
+}
+
+main .edit-information span {
+     font: 400 1.3vw tahoma, calibri;
+}
+
+/* Footer Style  */
+
+footer {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     background-color: var(--color-dark--);
+     height: 10vmin;
+     font: 500 1.2vw Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     color: var(--golden-color--);
+     padding: 3vw;
+     margin-top: 5vmin;
+}
+
+footer .arrow-up {
+     width: 6vmin;
+     height: 6vmin;
+     background-color: var(--golden-color-2--);
+     border-radius: 50%;
+     color: var(--color-dark--);
+     font-size: 1.8vw;
+     border: 2px solid var(--color-dark--);
+     box-shadow: 0 0 5vmin var(--color-dark--);
+     -o-box-shadow: 0 0 5vmin var(--color-dark--);
+     -webkit-box-shadow: 0 0 5vmin var(--color-dark--);
+     -ms-box-shadow: 0 0 5vmin var(--color-dark--);
+     -moz-box-shadow: 0 0 5vmin var(--color-dark--);
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     left: 50%;
+     bottom: 8.5vmin;
+     transform: translate(-50% , 0);
+}
+
+
+footer .arrow-up p {
+     position: relative;
+     bottom: 0.05em;
+}
