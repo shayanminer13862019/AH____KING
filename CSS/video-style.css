@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir/Vazir.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Vazir/Vazir.eot?#iefix") format("embedded-opentype"), url("../fonts/Vazir/Vazir.woff2") format("woff2"), url("../fonts/Vazir/Vazir.woff") format("woff"), url("../fonts/Vazir/Vazir.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+
+@font-face {
+  font-family: "Yekan";
+  src: url("../fonts/Yekan/yekan.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Yekan/yekan.eot?#iefix") format("embedded-opentype"), url("../fonts/Yekan/yekan.woff2") format("woff2"), url("../fonts/Yekan/yekan.woff") format("woff"), url("../fonts/Yekan/yekan.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+
+@font-face {
+  font-family: "iran-sans";
+  src: url("../fonts/iran-sans/IranianSans.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/iran-sans/IranianSans.eot?#iefix") format("embedded-opentype"), url("../fonts/iran-sans/IranianSans.woff2") format("woff2"), url("../fonts/iran-sans/IranianSans.woff") format("woff"), url("../fonts/iran-sans/IranianSans.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background: linear-gradient(#181818, #070707);
+  font-family: "Vazir", "Yekan", "iran-sans", tahoma, calibri;
+  position: relative; }
+
+a {
+  text-decoration: none; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5%; }
+
+video:focus {
+  outline: none; }
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-gap: 1%; }
+  main {
+    padding-bottom: 0rem; }
+  .header-title {
+    font-size: 1.5rem; } }
+
+body {
+  height: 100vh; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 3rem;
+  padding: 1rem;
+  background: -webkit-linear-gradient(right, #070707, #141414, #141414, #070707);
+  background: -o-linear-gradient(right, #181818, #181818, #070707);
+  background: -moz-linear-gradient(right, #181818, #181818, #070707);
+  background: linear-gradient(right, #181818, #181818, #070707);
+  border-bottom: 2px solid #d8a31c; }
+  .header-title {
+    color: #dba622;
+    font-family: "Yekan", "iran-sans", tahoma, calibri; }
+  .header-nav {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10%; }
+    .header-nav a {
+      color: #d8a31c; }
+
+.grid-container {
+  align-items: center;
+  padding: 3rem; }
+
+.Aside-footer {
+  display: flex;
+  flex-wrap: wrap; }
+
+Aside,
+footer {
+  padding: 2rem;
+  width: 100%;
+  color: #dba622;
+  border: 2px solid #d8a31c;
+  border-radius: 1em; }
+
+aside {
+  margin-bottom: auto; }
+  aside ul {
+    list-style: none; }
+
+footer {
+  margin-top: 3rem; }
+
+.video-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+.video-player {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid #d8a31c;
+  border-radius: 0.5em; }
+
+.download-button-box {
+  display: flex;
+  justify-content: center; }
+
+.download-button {
+  background: -webkit-linear-gradient(left, #dba622, #d8a31c, #dba622);
+  background: -moz-linear-gradient(left, #dba622, #d8a31c, #dba622);
+  background: -o-linear-gradient(left, #dba622, #d8a31c, #dba622);
+  background: -ms-linear-gradient(left, #dba622, #d8a31c, #dba622);
+  background: -webkit-linear-gradient(left, #dba622, #d8a31c, #dba622);
+  padding: 0.5rem 2rem;
+  width: 60%;
+  text-align: center;
+  margin-top: 3rem;
+  border-radius: 2rem;
+  box-shadow: 0.2em 0.2em 0.25em #181818; }
+
+@media (max-width: 865px) {
+  body {
+    height: auto; }
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-gap: 1%; }
+  main {
+    margin-top: 5rem; } }
